@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/bottom_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/bottom_home"
+            android:scaleType="fitCenter"
+            android:drawableTop="@drawable/bottom_home"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/bottom_find"
+            android:scaleType="fitCenter"
+            android:drawableTop="@drawable/bottom_find"
+            android:layout_weight="1"/>
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:id="@+id/send"
+            android:scaleType="fitCenter"
+            android:src="@drawable/send"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"/>
+
+        <RadioButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/bottom_store"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_toLeftOf="@id/bottom_mine"
+            android:drawableTop="@drawable/bottom_store"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/bottom_mine"
+            android:scaleType="fitCenter"
+            android:drawableTop="@drawable/bottom_mine"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+    <!--<ImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/Home"
+    android:scaleType="fitCenter"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:src="@drawable/home"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/find"
+        android:scaleType="fitCenter"
+        android:src="@drawable/findall"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/Home"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/send"
+        android:scaleType="fitCenter"
+        android:src="@drawable/send"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/store"
+        android:scaleType="fitCenter"
+        android:layout_toLeftOf="@id/mine"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/storeclick"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/mine"
+        android:scaleType="fitCenter"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/mine"/>-->
+</RelativeLayout>
