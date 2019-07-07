@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MineInfomation.MyInfomation"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mine_infomation_toolbar">
+
+
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/mine_infomation_backgroud"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dynamic_item_3_head"
+            android:paddingTop="-150dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/mine_infomation_backgroud_gray"
+            android:scaleType="fitCenter"
+            android:background="#CCCCCC"
+            android:alpha="0.6"/>
+        <!--android:layout_marginTop="-80dp"-->
+        <com.example.jieyi.closet.myView.MineInfomationScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/mine_infomation_srcollview">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@null"
+                >
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            </View>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/dynamic_item_1_head"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="介一"
+                    android:textColor="#FFFFFF"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="关注 11"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:layout_toLeftOf="@+id/mine_infomation_fansnum"
+                        android:layout_marginRight="30dp"/>
+                    <!--<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mine_infomation_fansnum"
+                        android:text="粉丝 11"
+                        android:textSize="15sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_weight="1"
+                        android:layout_centerInParent="true"/>
+                    <!--<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11"
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="喜欢 11"
+                        android:textSize="15sp"
+                        android:layout_toRightOf="@+id/mine_infomation_fansnum"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"/>
+                    <!--<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11"
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>-->
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="文章"
+                        android:textSize="20sp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:background="#FFFFFF"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:background="#FFFFFF"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:background="#FFFFFF"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:background="#FFFFFF"/>
+
+                    <!-- 按照动态的方式来处理 -->
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </com.example.jieyi.closet.myView.MineInfomationScrollView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
